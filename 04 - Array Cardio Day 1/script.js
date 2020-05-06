@@ -53,8 +53,8 @@ console.log(lastNameAlphabetically);
 // Sum up the instances of each of these
 const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck'];
 const groupData = data.reduce((object, vehicule) => {
-  if (!object[vehicule]) { object[vehicule] = 1; }
-  else { object[vehicule] ++; }
+  if (!object[vehicule]) { object[vehicule] = 0; }
+  object[vehicule] ++;
   return object;
 }, {})
 console.log(groupData);
